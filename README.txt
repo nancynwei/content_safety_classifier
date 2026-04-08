@@ -35,13 +35,13 @@ This generates 6,400 samples (4,000 training, 1,200 validation, 1,200 test):
 STEP 3. TRAINING
 ----------------
 First, find the timestamp of your generated data:
-    ls submission/data/
+    ls /data/
 
 Then, run the training script:
-    python submission/model/train.py \
-      --train_file submission/data/TIMESTAMP-train_dataset.json \
-      --val_file submission/data/TIMESTAMP-val_dataset.json \
-      --test_file submission/data/TIMESTAMP-test_dataset.json
+    python /model/train.py \
+      --train_file /data/TIMESTAMP-train_dataset.json \
+      --val_file /data/TIMESTAMP-val_dataset.json \
+      --test_file /data/TIMESTAMP-test_dataset.json
 
 *Replace TIMESTAMP with the actual date/time string from your data files.*
 
